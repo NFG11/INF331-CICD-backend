@@ -4,7 +4,7 @@
   "description": "",
   "main": "server.js",
   "scripts": {
-    "start": "node server.js",
+    "start": "forever start --minUptime 1000 --spinSleepTime 1000 server.js",
     "test": "mocha --reporter spec ./test/test.js"
   },
   "author": "",
